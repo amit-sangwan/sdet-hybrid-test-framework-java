@@ -1,8 +1,8 @@
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/ApiTests/src/test/java/base/BaseTest.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/ApiTests/src/test/java/basketApis/BasketItemApiTest.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/ApiTests/src/test/java/productApis/ListProductApiTest.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/ApiTests/src/test/java/securityQuestions/SecurityQuestions.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/ApiTests/src/test/java/userApis/RegisterUserApiTest.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/ApiTests/src/test/java/userApis/LoginUserApiTest.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/ApiTests/src/test/java/feedbackApis/FeedbackApiTest.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/ApiTests/src/test/java/orderApis/OrderApiTest.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/ApiTests/src/test/java/basketApis/BasketItemApiTest.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/ApiTests/src/test/java/feedbackApis/FeedbackApiTest.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/ApiTests/src/test/java/securityQuestions/SecurityQuestions.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/ApiTests/src/test/java/orderApis/OrderApiTest.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/ApiTests/src/test/java/userApis/LoginUserApiTest.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/ApiTests/src/test/java/productApis/ListProductApiTest.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/ApiTests/src/test/java/base/BaseTest.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/ApiTests/src/test/java/userApis/RegisterUserApiTest.java

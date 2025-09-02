@@ -1,0 +1,58 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# Build directories
+target/
+out/
+build/
+
+# Logs
+*.log
+
+# Dependency caches
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven Wrapper
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Test reports
+test-output/
+surefire-reports/
+reports/
+extent-reports/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Environment / Config
+*.properties.local
+*.env
+*.secrets
+
+# Coverage
+coverage/
+*.lcov
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Node modules (if using frontend or Juice Shop integration)
+node_modules/
+
+# Ignore generated screenshots/videos (UI automation)
+screenshots/
+videos/
+

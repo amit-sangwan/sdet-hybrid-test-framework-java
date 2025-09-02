@@ -1,4 +1,4 @@
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/UITests/src/main/java/pages/LandingPage.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/UITests/src/main/java/common/Utils.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/UITests/src/main/java/common/ConfigLoader.java
-/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/CustomeJuiceShop/UITests/src/main/java/common/DriverFactory.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/UITests/src/main/java/pages/LandingPage.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/UITests/src/main/java/common/Utils.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/UITests/src/main/java/common/DriverFactory.java
+/Users/amittsangwan/workspace/gitWorkspace/sdet-hybrid-test-framework-java/UITests/src/main/java/common/ConfigLoader.java
