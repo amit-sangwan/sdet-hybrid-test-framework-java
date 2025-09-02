@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="JuiceShop API Suite" verbose="1" parallel="tests" thread-count="4">
+
+    <test name="User API Tests">
+        <classes>
+            <class name="base.BaseTest"/>
+        </classes>
+    </test>
+
+    <!-- Login & User Tests -->
+    <test name="User Tests" preserve-order="true">
+        <classes>
+            <class name="userApis.LoginUserApiTest"/>
+        </classes>
+    </test>
+
+</suite>

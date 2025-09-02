@@ -1,0 +1,159 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.ams</groupId>
+        <artifactId>hybrid-automation-framework</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.selenium-ui-automation-java.automation</groupId>
+    <artifactId>custom-juice-shop</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>Selenium UI Automation POM Framework</name>
+    <description>A Selenium UI automation base with POM, TestNG, ExtentReports</description>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <browserName>chrome</browserName>
+        <app.url>https://custom-juice-shop.onrender.com/</app.url>
+        <env>render</env>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <includes>
+                    <include>run.properties</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+
+        <plugins>
+            <!-- Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <browserName>${browserName}</browserName>
+                        <app.url>${app.url}</app.url>
+                        <env>${env}</env>
+                    </systemPropertyVariables>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${project.basedir}/src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <!-- Selenium Java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.21.0</version>
+        </dependency>
+
+        <!-- WebDriverManager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.9.2</version>
+        </dependency>
+
+        <!-- Extent Reports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+
+        <!-- Apache Commons Lang -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+
+        <!-- Log4j2 -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.23.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.23.1</version>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <env>local</env>
+                <app.url>http://localhost:3000/</app.url>
+                <browserName>chrome</browserName>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <property>
+                    <name>environment</name>
+                    <value>local</value>
+                </property>
+            </activation>
+            <build>
+                <testResources>
+                    <testResource>
+                        <directory>${project.basedir}/src/test/resources/production</directory>
+                        <filtering>true</filtering>
+                    </testResource>
+                </testResources>
+            </build>
+        </profile>
+
+        <profile>
+            <id>render</id>
+            <properties>
+                <env>render</env>
+                <app.url>https://custom-juice-shop.onrender.com/</app.url>
+                <browserName>chrome</browserName>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+
+</project>
