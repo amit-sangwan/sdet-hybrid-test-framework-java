@@ -1,3 +1,4 @@
+**Hybrid UI + API Automation Framework**
 
 <img width="400" height="150" alt="Screenshot 2025-09-03 at 12 01 24 AM" src="https://github.com/user-attachments/assets/c42f9988-5829-4025-a952-5bfd667c1486" />
 <img width="300" height="150" alt="Screenshot 2025-09-03 at 12 02 15 AM" src="https://github.com/user-attachments/assets/3565b50e-cb92-4a97-bdda-48936e4a3ec8" />
